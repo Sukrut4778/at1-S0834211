@@ -164,6 +164,7 @@ struct kgsl_device_platform_data {
 	struct msm_bus_scale_pdata *bus_scale_table;
 	const char *iommu_user_ctx_name;
 	const char *iommu_priv_ctx_name;
+        struct msm_dcvs_core_info *core_info;
 };
 
 #endif
