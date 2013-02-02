@@ -85,6 +85,10 @@ GTAGS
 *.orig
 *~
 \#*#
+.cpio
+kernel/timeconst.h
+.lds
+Documentation/DocBook/media/v4l/controls.xml
 =======
 # built application files
 *.apk
