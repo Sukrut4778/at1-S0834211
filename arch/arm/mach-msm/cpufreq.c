@@ -117,6 +117,7 @@ static void msm_cpu_early_suspend(struct early_suspend *h)
 			lmf_screen_state = false;
 #endif
 			cpu_down(1);
+                        }
 		mutex_unlock(&per_cpu(cpufreq_suspend, cpu).suspend_mutex);
 	}
 }
@@ -147,6 +148,7 @@ static void msm_cpu_late_resume(struct early_suspend *h)
 			lmf_screen_state = true;
 #endif
 			cpu_up(1);
+                        }
 		mutex_unlock(&per_cpu(cpufreq_suspend, cpu).suspend_mutex);
 	}
 }
