@@ -295,3 +295,4 @@ extern struct platform_device msm_device_vfe;
 extern struct platform_device msm_device_vpe;
 
 extern struct platform_device msm8660_cpu_idle_device;
+extern struct platform_device msm8660_msm_gov_device;
