@@ -2883,3 +2883,13 @@ struct platform_device msm_rpm_device = {
 };
 
 #endif
+
+static int msm8660_LPM_latency = 1000; /* >100 usec for WFI */
+
+struct platform_device msm8660_cpu_idle_device = {
+	.name   = "msm_cpu_idle",
+	.id     = -1,
+	.dev = {
+		.platform_data = &msm8660_LPM_latency,
+	},
+};

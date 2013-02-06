@@ -6710,6 +6710,8 @@ static struct platform_device *surf_devices[] __initdata = {
 #endif
 	&msm8660_device_watchdog,
 
+        &msm8660_cpu_idle_device,
+
 #ifdef CONFIG_WIFI_CONTROL_FUNC //110114_BCM43291_PLATFORM
    &wlan_device,
 #endif
