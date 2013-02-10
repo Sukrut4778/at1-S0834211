@@ -903,7 +903,7 @@ static struct kgsl_device_platform_data kgsl_2d0_pdata = {
 #ifdef CONFIG_MSM_BUS_SCALING
 	.bus_scale_table = &grp2d0_bus_scale_pdata,
 #endif
-         .core_info = &grp2d_core_info
+         .core_info = &grp2d_core_inf
 };
 
 struct platform_device msm_kgsl_2d0 = {
@@ -2908,4 +2908,4 @@ struct platform_device msm8660_msm_gov_device = {
 	.dev = {
 		.platform_data = &msm8660_core_info,
 	},
-};
+
